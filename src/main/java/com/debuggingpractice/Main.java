@@ -4,23 +4,25 @@ public class Main {
 
 
     public static void main(String[] args) {
+
+        //Test your method with an array containing the numbers 1, 2, 3, 4, 5.
         int[] array = {1, 2, 3, 4, 5};
 
-        // average of the array
+        //average of the array
         double average = calculateAverage(array);
         System.out.println("Average: " + average);
 
-        //int[] nullArray = null;
-        int [] nullArray = {1, 2, 3, 4, 5};
+        //int[] array2 = null;
+        int [] array2 = {1, 2, 3, 4, 5};
         // null and exception
-        double nullAverage = calculateAverage(nullArray);
-        System.out.println("Average: " + nullAverage);
+        double array2Average = calculateAverage(array2);
+        System.out.println("Average: " + array2Average);
 
-        //int[] emptyArray = {};
-        int [] emptyArray ={1};
+        //int[] array3 = {9};
+        int [] array3 ={1};
         // out of bound exception
-        double emptyAverage = calculateAverage(emptyArray);
-        System.out.println("Average: " + emptyAverage);
+        double array3Average = calculateAverage(array3);
+        System.out.println("Average: " + array3Average);
     }
 
 
@@ -37,6 +39,7 @@ public class Main {
                 throw new IllegalArgumentException("NULL!");
             }
             int sum = 0;
+
             // iterate through and add to the sum of array
             for (int i = 0; i < array.length; i++) {
                 // a logic error by subtracting instead of adding
